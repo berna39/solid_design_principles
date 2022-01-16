@@ -10,3 +10,6 @@ class KitchenAppliance:
 
 class Taster(KitchenAppliance):
     pass
+
+
+k = KitchenAppliance()
