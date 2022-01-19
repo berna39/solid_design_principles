@@ -55,3 +55,14 @@ class Azure(CloudService):
 
 azure = Azure()
 print(azure.authenticate())
+
+#azure service
+class GCP(CloudService):
+    def authenticate(self):
+        return 'auth to gcp'
+
+    def deploy(self):
+        return 'deploy to gcp'
+
+gcp = GCP()
+print(gcp.authenticate())
