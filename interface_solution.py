@@ -31,3 +31,7 @@ class OldSchoolPhone(Voice, Text):
 
     def text():
         raise NotImplementedError
+
+
+nokia = OldSchoolPhone()
+print(help(nokia))
