@@ -25,3 +25,5 @@ nokia = OldSchoolPhone()
 
 
 print(help(nokia)) #it shouldn't have the camera method
+
+#solution goto interface_solution.py
