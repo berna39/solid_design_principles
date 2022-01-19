@@ -24,3 +24,10 @@ class Smartphone(Voice, Text, Camera):
 
     def camera():
         raise NotImplementedError
+
+class OldSchoolPhone(Voice, Text):
+    def voice():
+        raise NotImplementedError
+
+    def text():
+        raise NotImplementedError
