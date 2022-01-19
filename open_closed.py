@@ -22,3 +22,36 @@ class CloudService:
 service = CloudService('aws') #example of deploying 
 service.deploy()
         
+#now let immagine the case when we add the gcp service to our cloud service
+#instead of adding on more condition to our class, let refractor the code
+# --------------------------------------------------------------------------
+from abc import ABC, abstractmethod
+
+class CloudService(ABC):
+    def authenticate(self):
+        pass
+
+    def deploy(self):
+        pass
+
+#aws service
+class AWS(CloudService):
+    def authenticate(self):
+        return 'auth to aws'
+
+    def deploy(self):
+        return 'deploy to aws'
+
+aws = AWS()
+print(aws.authenticate())
+
+#azure service
+class Azure(CloudService):
+    def authenticate(self):
+        return 'auth to azure'
+
+    def deploy(self):
+        return 'deploy to azure'
+
+azure = Azure()
+print(azure.authenticate())
